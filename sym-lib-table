@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ProjectSpecific)(type Legacy)(uri ${KIPRJMOD}/../../LIB_Schematic/MCU_Nordic.lib)(options "")(descr ""))
+  (lib (name smartwatch-rescue)(type Legacy)(uri ${KIPRJMOD}/smartwatch-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,493 @@
+EESchema Schematic File Version 4
+LIBS:smartwatch-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "SchmartWatch"
+Date "2019-02-18"
+Rev ""
+Comp "www.kurzschluss-blog.de"
+Comment1 "Version for review"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ProjectSpecific:LSM303AGR U4
+U 1 1 5B3B38FE
+P 9000 2700
+F 0 "U4" H 9500 3150 50  0000 C CNN
+F 1 "LSM303AGR" H 9300 2200 50  0000 C CNN
+F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 8100 3350 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/389/lsm303agr-954987.pdf" H 8100 3350 50  0001 C CNN
+F 4 "2,33" H 1850 550 50  0001 C CNN "Price"
+F 5 "LSM303AGR" H 1850 550 50  0001 C CNN "MPN1"
+F 6 "LGA" H 0   0   50  0001 C CNN "Package"
+	1    9000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR035
+U 1 1 5B3B3905
+P 8400 1500
+F 0 "#PWR035" H 8400 1350 50  0001 C CNN
+F 1 "+3V3" H 8415 1673 50  0000 C CNN
+F 2 "" H 8400 1500 50  0001 C CNN
+F 3 "" H 8400 1500 50  0001 C CNN
+	1    8400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1500 8400 1550
+Wire Wire Line
+	8850 1550 9150 1550
+Wire Wire Line
+	9150 1550 9150 2200
+Connection ~ 8850 1550
+Wire Wire Line
+	8850 1550 8850 2200
+$Comp
+L Device:C C7
+U 1 1 5B3B3912
+P 9350 1750
+F 0 "C7" H 9235 1796 50  0000 R CNN
+F 1 "10u/4V" H 9235 1705 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9388 1600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 9350 1750 50  0001 C CNN
+F 4 "0,02363" H 1850 550 50  0001 C CNN "Price"
+F 5 "CL10A106MQ8NNNC" H 1850 550 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "GRM188R60J106ME84D" H 0   0   50  0001 C CNN "MPN2"
+	1    9350 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5B3B391B
+P 8400 1750
+F 0 "C6" H 8285 1796 50  0000 R CNN
+F 1 "10u/4V" H 8285 1705 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8438 1600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 8400 1750 50  0001 C CNN
+F 4 "0,02363" H 1800 550 50  0001 C CNN "Price"
+F 5 "CL10A106MQ8NNNC" H 1800 550 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "GRM188R60J106ME84D" H 0   0   50  0001 C CNN "MPN2"
+	1    8400 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1600 8400 1550
+Wire Wire Line
+	8400 1550 8850 1550
+Wire Wire Line
+	9150 1550 9350 1550
+Wire Wire Line
+	9350 1550 9350 1600
+Connection ~ 9150 1550
+$Comp
+L power:GND #PWR036
+U 1 1 5B3B3927
+P 8400 2000
+F 0 "#PWR036" H 8400 1750 50  0001 C CNN
+F 1 "GND" H 8405 1827 50  0000 C CNN
+F 2 "" H 8400 2000 50  0001 C CNN
+F 3 "" H 8400 2000 50  0001 C CNN
+	1    8400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5B3B392D
+P 9350 2000
+F 0 "#PWR038" H 9350 1750 50  0001 C CNN
+F 1 "GND" H 9355 1827 50  0000 C CNN
+F 2 "" H 9350 2000 50  0001 C CNN
+F 3 "" H 9350 2000 50  0001 C CNN
+	1    9350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5B3B3933
+P 8950 3400
+F 0 "#PWR037" H 8950 3150 50  0001 C CNN
+F 1 "GND" H 8955 3227 50  0000 C CNN
+F 2 "" H 8950 3400 50  0001 C CNN
+F 3 "" H 8950 3400 50  0001 C CNN
+	1    8950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3250 8950 3350
+Wire Wire Line
+	8950 3350 9050 3350
+Wire Wire Line
+	9050 3350 9050 3250
+Connection ~ 8950 3350
+Wire Wire Line
+	8950 3350 8950 3400
+$Comp
+L Device:C C20
+U 1 1 5B3B3940
+P 9700 3150
+F 0 "C20" H 9585 3196 50  0000 R CNN
+F 1 "22n/6.3V" H 9585 3105 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9738 3000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/396/mlcc02_e-1307760.pdf" H 9700 3150 50  0001 C CNN
+F 4 "0,01472" H 1850 550 50  0001 C CNN "Price"
+F 5 "GRM188R71H223KA01D" H 1850 550 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "C1608X8R1H223K080AA" H 0   0   50  0001 C CNN "MPN2"
+	1    9700 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3000 9700 2950
+Wire Wire Line
+	9700 2950 9650 2950
+Wire Wire Line
+	9700 3300 9700 3350
+Wire Wire Line
+	9700 3350 9050 3350
+Connection ~ 9050 3350
+Text Label 10100 2850 2    50   ~ 0
+INT_MAG
+Wire Wire Line
+	10100 2850 9650 2850
+Text Label 10100 2750 2    50   ~ 0
+INT_1_XL
+Text Label 10100 2650 2    50   ~ 0
+INT_2_XL
+Wire Wire Line
+	10100 2650 9650 2650
+Wire Wire Line
+	10100 2750 9650 2750
+Text Label 8050 2550 0    50   ~ 0
+SCL_IMU
+Text Label 8050 2650 0    50   ~ 0
+SDA_IMU
+Text Label 8050 2850 0    50   ~ 0
+CS_XL
+Text Label 8050 2950 0    50   ~ 0
+CS_MAG
+Wire Wire Line
+	8050 2850 8350 2850
+Wire Wire Line
+	8050 2950 8350 2950
+Connection ~ 8400 1550
+Wire Wire Line
+	9350 2000 9350 1900
+Wire Wire Line
+	8400 2000 8400 1900
+Wire Wire Line
+	7950 2650 8350 2650
+Wire Wire Line
+	7950 2550 8350 2550
+$Comp
+L power:GND #PWR020
+U 1 1 5B3D965B
+P 3450 2500
+F 0 "#PWR020" H 3450 2250 50  0001 C CNN
+F 1 "GND" H 3455 2327 50  0000 C CNN
+F 2 "" H 3450 2500 50  0001 C CNN
+F 3 "" H 3450 2500 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2500 3450 2450
+Wire Wire Line
+	3450 2450 3400 2450
+$Comp
+L power:+BATT #PWR017
+U 1 1 5B3D9663
+P 2550 2200
+F 0 "#PWR017" H 2550 2050 50  0001 C CNN
+F 1 "+BATT" H 2565 2373 50  0000 C CNN
+F 2 "" H 2550 2200 50  0001 C CNN
+F 3 "" H 2550 2200 50  0001 C CNN
+	1    2550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2250 2550 2250
+Wire Wire Line
+	2550 2250 2550 2200
+$Comp
+L ProjectSpecific:M41T62LC6F U1
+U 1 1 5B3D966D
+P 3000 2350
+F 0 "U1" H 3000 2715 50  0000 C CNN
+F 1 "M41T62LC6F" H 3000 2624 50  0000 C CNN
+F 2 "ProjectSpecific:LCC-8_1.5x3.2mm_P0.9mm" H 3000 2050 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/389/m41t62-955028.pdf" H 3000 2050 50  0001 C CNN
+F 4 "M41T62LC6F" H -1950 -300 50  0001 C CNN "MPN1"
+F 5 "3,33" H -1950 -300 50  0001 C CNN "Price"
+F 6 "LCC" H 0   0   50  0001 C CNN "Package"
+	1    3000 2350
+	1    0    0    -1  
+$EndComp
+Text Label 2200 2350 0    50   ~ 0
+SCL_RTC
+Text Label 2200 2450 0    50   ~ 0
+SDA_RTC
+$Comp
+L Device:R R2
+U 1 1 5B3D9678
+P 2150 2050
+F 0 "R2" H 2220 2096 50  0000 L CNN
+F 1 "10k" H 2220 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 2050 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/crcwce3-1223726.pdf" H 2150 2050 50  0001 C CNN
+F 4 "0,09" H -650 -750 50  0001 C CNN "Price"
+F 5 "RMCF0603JG10K0" H -650 -750 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "CR0603-JW-103ELF" H 0   0   50  0001 C CNN "MPN2"
+	1    2150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B3D9681
+P 1700 2050
+F 0 "R1" H 1770 2096 50  0000 L CNN
+F 1 "10k" H 1770 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 2050 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/crcwce3-1223726.pdf" H 1700 2050 50  0001 C CNN
+F 4 "0,09" H -1400 -750 50  0001 C CNN "Price"
+F 5 "RMCF0603JG10K0" H -1400 -750 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "CR0603-JW-103ELF" H 0   0   50  0001 C CNN "MPN2"
+	1    1700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5B3D9688
+P 1700 1800
+F 0 "#PWR07" H 1700 1650 50  0001 C CNN
+F 1 "+3V3" H 1715 1973 50  0000 C CNN
+F 2 "" H 1700 1800 50  0001 C CNN
+F 3 "" H 1700 1800 50  0001 C CNN
+	1    1700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1800 1700 1850
+Wire Wire Line
+	1700 1850 2150 1850
+Wire Wire Line
+	2150 1850 2150 1900
+Connection ~ 1700 1850
+Wire Wire Line
+	1700 1850 1700 1900
+Text Label 3850 2350 2    50   ~ 0
+INT_RTC
+Wire Wire Line
+	3850 2350 3500 2350
+$Comp
+L Device:R R12
+U 1 1 5B3D9697
+P 3500 2050
+F 0 "R12" H 3570 2096 50  0000 L CNN
+F 1 "10k" H 3570 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 2050 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/crcwce3-1223726.pdf" H 3500 2050 50  0001 C CNN
+F 4 "0,09" H 400 -750 50  0001 C CNN "Price"
+F 5 "RMCF0603JG10K0" H 400 -750 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "CR0603-JW-103ELF" H 0   0   50  0001 C CNN "MPN2"
+	1    3500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2200 3500 2350
+Connection ~ 3500 2350
+Wire Wire Line
+	3500 2350 3400 2350
+Wire Wire Line
+	3500 1900 3500 1850
+$Comp
+L Device:C C5
+U 1 1 5B3D96A4
+P 2550 2650
+F 0 "C5" H 2665 2696 50  0000 L CNN
+F 1 "100n/6.3V" H 2665 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 2500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 2550 2650 50  0001 C CNN
+F 4 "0,01188" H -2550 -650 50  0001 C CNN "Price"
+F 5 "GCM188R71C104KA37D" H -2550 -650 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "0603YC104MAT2A" H 0   0   50  0001 C CNN "MPN2"
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2500 2550 2250
+Connection ~ 2550 2250
+$Comp
+L power:GND #PWR018
+U 1 1 5B3D96AD
+P 2550 2800
+F 0 "#PWR018" H 2550 2550 50  0001 C CNN
+F 1 "GND" H 2555 2627 50  0000 C CNN
+F 2 "" H 2550 2800 50  0001 C CNN
+F 3 "" H 2550 2800 50  0001 C CNN
+	1    2550 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 1850
+Wire Wire Line
+	3500 1850 2150 1850
+Wire Wire Line
+	2150 2200 2150 2350
+Wire Wire Line
+	2150 2350 2600 2350
+Wire Wire Line
+	1700 2200 1700 2450
+Wire Wire Line
+	1700 2450 2600 2450
+Text Notes 2100 1300 0    118  ~ 0
+Realtime Clock
+Text Notes 8350 950  0    118  ~ 0
+IMU sensor
+Text Notes 2500 4900 0    118  ~ 0
+Piezo Buffer
+$Comp
+L ProjectSpecific:SMT-0940-T-3V-R X2
+U 1 1 5B48BBF4
+P 3950 5400
+F 0 "X2" V 3904 5528 50  0000 L CNN
+F 1 "SMT-0940-T-3V-R" V 3995 5528 50  0000 L CNN
+F 2 "ProjectSpecific:SMT-0940-T_3V-R" H 3950 5400 50  0001 C CNN
+F 3 "" H 3950 5400 50  0001 C CNN
+F 4 "SMT-0940-T-3V-R" H 0   0   50  0001 C CNN "MPN1"
+F 5 "3,55" H 0   0   50  0001 C CNN "Price"
+	1    3950 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5150 3150 5150
+Wire Wire Line
+	3150 5150 3150 5250
+Wire Wire Line
+	3150 5550 3150 5650
+Wire Wire Line
+	3150 5650 3950 5650
+$Comp
+L Transistor_FET:BSP129 Q?
+U 1 1 5B49D996
+P 3050 5950
+AR Path="/5B49D996" Ref="Q?"  Part="1" 
+AR Path="/5B3A59E6/5B49D996" Ref="Q2"  Part="1" 
+F 0 "Q2" H 3256 5996 50  0000 L CNN
+F 1 "Si1308EDL" H 3256 5905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 3250 5875 50  0001 L CIN
+F 3 "https://www.mouser.de/datasheet/2/427/si1308edl-256534.pdf" H 3050 5950 50  0001 L CNN
+F 4 "SI1308EDL-T1-GE3" H -6500 3450 50  0001 C CNN "MPN1"
+F 5 "0,5" H -6500 3450 50  0001 C CNN "Price"
+F 6 "SOT-323" H 0   0   50  0001 C CNN "Package"
+	1    3050 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5750 3150 5650
+Connection ~ 3150 5650
+Wire Wire Line
+	3150 6100 3150 6150
+$Comp
+L Device:R R11
+U 1 1 5B4A159C
+P 2600 5950
+F 0 "R11" H 2670 5996 50  0000 L CNN
+F 1 "10k" H 2670 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 5950 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/crcwce3-1223726.pdf" H 2600 5950 50  0001 C CNN
+F 4 "0,09" H -200 3150 50  0001 C CNN "Price"
+F 5 "RMCF0603JG10K0" H -200 3150 50  0001 C CNN "MPN1"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "CR0603-JW-103ELF" H 0   0   50  0001 C CNN "MPN2"
+	1    2600 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 5950 2750 5950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5B4A3D84
+P 3950 5100
+AR Path="/5B4A3D84" Ref="#PWR?"  Part="1" 
+AR Path="/5B3A59E6/5B4A3D84" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 3950 4950 50  0001 C CNN
+F 1 "+3V3" H 3965 5273 50  0000 C CNN
+F 2 "" H 3950 5100 50  0001 C CNN
+F 3 "" H 3950 5100 50  0001 C CNN
+	1    3950 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5100 3950 5150
+Connection ~ 3950 5150
+Wire Wire Line
+	3950 5200 3950 5150
+Wire Wire Line
+	3950 5650 3950 5600
+$Comp
+L Device:L L?
+U 1 1 5B4B02D5
+P 3150 5400
+AR Path="/5B4B02D5" Ref="L?"  Part="1" 
+AR Path="/5B3A59E6/5B4B02D5" Ref="L3"  Part="1" 
+F 0 "L3" H 3250 5450 50  0000 C CNN
+F 1 "2u2/650mA" H 3450 5350 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 3150 5400 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/396/CKP1608D2R2M-T_SS-1291418.pdf" H 3150 5400 50  0001 C CNN
+F 4 "0,2" H 400 4400 50  0001 C CNN "Price"
+F 5 "MBKK2012T2R2M" H 400 4400 50  0001 C CNN "MPN1"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "GLF2012T2R2M" H 0   0   50  0001 C CNN "MPN2"
+	1    3150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5B4B298D
+P 3150 6150
+F 0 "#PWR019" H 3150 5900 50  0001 C CNN
+F 1 "GND" H 3155 5977 50  0000 C CNN
+F 2 "" H 3150 6150 50  0001 C CNN
+F 3 "" H 3150 6150 50  0001 C CNN
+	1    3150 6150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 6150
+Text Label 1950 5950 0    50   ~ 0
+BUZZER
+Wire Wire Line
+	1950 5950 2450 5950
+Text HLabel 1950 5950 0    50   Input ~ 0
+BUZZER
+Text HLabel 2150 2350 0    50   Input ~ 0
+SCL_RTC
+Text HLabel 1700 2450 0    50   BiDi ~ 0
+SDA_RTC
+Text HLabel 3850 2350 2    50   Output ~ 0
+INT_RTC
+Text HLabel 7950 2550 0    50   Input ~ 0
+SCL_IMU
+Text HLabel 7950 2650 0    50   BiDi ~ 0
+SDA_IMU
+Text HLabel 8050 2850 0    50   Input ~ 0
+CS_XL
+Text HLabel 8050 2950 0    50   Input ~ 0
+CS_MAG
+Text HLabel 10100 2650 2    50   Output ~ 0
+INT_2_XL
+Text HLabel 10100 2750 2    50   Output ~ 0
+INT_1_XL
+Text HLabel 10100 2850 2    50   Output ~ 0
+INT_MAG
+$EndSCHEMATC
