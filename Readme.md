@@ -1,5 +1,5 @@
 # Schmart Watch Hardware
-
+![Image of PCB rendering](https://2.bp.blogspot.com/-JMoDxUVAF1w/XG19rJ2Qv0I/AAAAAAAAR6U/EYKMNkpcoXELdZ08jHINfMwZN4iUAqkCACLcBGAs/s1600/render.png)
 ## Table of Contents
 
 - [Introduction](#introduction)
