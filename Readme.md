@@ -11,7 +11,7 @@
 
 This application is the hardware for the DIY Smartwatch project [Schmart Watch](http://www.kurzschluss-blog.de/2018/07/schmartwatch-01-smartwatch-selbst-gebaut.html).
 
-To open the project you need [KiCad Version 5.0.0-rc2](http://kicad-pcb.org/) or newer.
+To open the project you need [KiCad Version 5.0.0-rc2](http://kicad.org/) or newer.
 
 ## Terms of Use
 
